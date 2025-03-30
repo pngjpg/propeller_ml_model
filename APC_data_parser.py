@@ -219,10 +219,8 @@ import numpy as np
 # import seaborn as sns
 import pandas as pd
 
-# model = torch.load("C:\\Users\\Brian\OneDrive - Massachusetts Institute of Technology\\Projects\\PropDiff\\model.pt", weights_only=False)
-
 model = MLPcondensed() # initialize your model class
-model.load_state_dict(torch.load("C:\\Users\\Brian\OneDrive - Massachusetts Institute of Technology\\Projects\\PropDiff\\model_APC_1k_epoch.pth"))
+model.load_state_dict(torch.load(os.getcwd()+"\\model_APC_1k_epoch.pth"))
     
 #%% Plotting
 
